@@ -47,8 +47,8 @@ public class ClassSplitterTest {
 		Assert.assertNotNull(methodInfo);
 		List<AttributeInfo> attributes = methodInfo.getUsedAttributes();
 		Assert.assertEquals(1, attributes.size());
+		Assert.assertEquals("attr", attributes.get(0).toString());
 	}
-	
 	
 	
 	

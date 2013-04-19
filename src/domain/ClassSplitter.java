@@ -5,6 +5,7 @@ import japa.parser.ParseException;
 import japa.parser.ast.CompilationUnit;
 import japa.parser.ast.body.FieldDeclaration;
 import japa.parser.ast.body.MethodDeclaration;
+import japa.parser.ast.body.VariableDeclarator;
 import japa.parser.ast.expr.AssignExpr;
 import japa.parser.ast.expr.FieldAccessExpr;
 import japa.parser.ast.stmt.Statement;
@@ -51,6 +52,19 @@ public class ClassSplitter {
 		return this.attributes.size();
 	}
 	
+	public List<AttributeInfo> getAttributes() {
+		return this.attributes;
+	}
+	
+	public MethodInfo getMethodInfoFor(String methodName) {
+		for (MethodInfo methodInfo : methods) {
+			if (methodInfo.getName().equals(methodName))
+				return methodInfo;
+		}
+		return null;
+	}
+	
+	
 	private static class AttributeVisitor extends VoidVisitorAdapter<Object> {
 		
 		private ClassSplitter splitter = null;
@@ -61,7 +75,11 @@ public class ClassSplitter {
     	
 		@Override
         public void visit(FieldDeclaration n, Object arg) {
-			this.splitter.attributes.add(new AttributeInfo());
+			// TODO: tratar mais de uma variavel
+			VariableDeclarator variable = n.getVariables().get(0);
+			String var = variable.getId().getName();
+			
+			this.splitter.attributes.add(new AttributeInfo(var));
         }	
 	}
 	
@@ -74,39 +92,16 @@ public class ClassSplitter {
     	}
     	
         @Override
-    	public void visit(AssignExpr n, Object arg) {
-        	System.out.println(n.toString());
-        }	
-        
-        
-        @Override
         public void visit(MethodDeclaration n, Object arg) {
-            // here you can access the attributes of the method.
-            // this method will be called for all methods in this 
-            // CompilationUnit, including inner class methods
             
-            splitter.methods.add(new MethodInfo(n.getName()));
+        	MethodInfo methodInfo = new MethodInfo(n);
+            splitter.methods.add(methodInfo);
             
-            List<Statement> statements = n.getBody().getStmts();
-            
-            if (statements == null)
-            	return;
-            
-            for (Statement statement : statements) {
-            	//System.out.println(statement.toString());
-            }
-            
-            super.visit(n, arg);
+            methodInfo.extractAttributesInUse(this.splitter.getAttributes());
         }
     }
 
-	public MethodInfo getMethodInfoFor(String methodName) {
-		for (MethodInfo methodInfo : methods) {
-			if (methodInfo.getName().equals(methodName))
-				return methodInfo;
-		}
-		return null;
-	}
+
 
     
 	
