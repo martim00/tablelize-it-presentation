@@ -1,0 +1,11 @@
+|split|ClassWithMethodUsingOneAttribute.java|
+|method count|attributes count|
+|1|1|
+
+|method|foo|
+|used attributes|
+|boo|
+|la|
+
+
+
