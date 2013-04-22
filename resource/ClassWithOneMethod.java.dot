@@ -1,0 +1,3 @@
+digraph class {
+method[shape=box];
+}

@@ -11,7 +11,9 @@ import japa.parser.ast.expr.FieldAccessExpr;
 import japa.parser.ast.stmt.Statement;
 import japa.parser.ast.visitor.VoidVisitorAdapter;
 
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,9 +44,62 @@ public class ClassSplitter {
         
         new AttributeVisitor(this).visit(compilationUnit, null);
         new MethodVisitor(this).visit(compilationUnit, null); 
+        
+        generateDotFile(path + ".dot");
 		
 	}
 	
+	void writeContentsToFile(String contents, String filename) {
+		FileWriter output = null;
+		BufferedWriter writer = null;
+	    try {
+	      output = new FileWriter(filename);
+	      writer = new BufferedWriter(output);
+	      writer.write(contents);
+	    } catch (Exception e) {
+	      throw new RuntimeException(e);
+	    } finally {
+	      if (output != null) {
+	        try {
+	          writer.close();
+	          output.close();
+	        } catch (IOException e) {
+	          // Ignore issues during closing
+	        }
+	      }
+	    }	
+	}
+	
+	private void generateDotFile(String filename) {
+		
+		String contents = new String();
+		
+		contents += "digraph class {\n";
+
+		for (AttributeInfo attribute : attributes) {
+			contents += attribute.getName();
+			contents += ";\n";
+		}
+
+		for (MethodInfo method : methods) {
+			contents += method.getName();
+			contents += "[shape=box];\n";
+			
+			List<AttributeInfo> usedAttrs = method.getUsedAttributes();
+			for (AttributeInfo attr : usedAttrs) {
+				contents += method.getName();
+				contents += "->";
+				contents += attr.getName();
+				contents += ";\n";
+			}
+		}
+		
+		contents += "}";
+		
+		writeContentsToFile(contents, filename);
+
+	}
+
 	public int getMethodCount() {
 		return methods.size();
 	}
