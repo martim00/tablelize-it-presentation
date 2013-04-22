@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ClassSplitter {
 	
 	private List<MethodInfo> methods = new ArrayList<MethodInfo>();
@@ -100,6 +101,10 @@ public class ClassSplitter {
             methodInfo.extractAttributesInUse(this.splitter.getAttributes());
         }
     }
+
+	public List<MethodInfo> getMethods() {
+		return this.methods;
+	}
 
 
 

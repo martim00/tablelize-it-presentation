@@ -43,11 +43,11 @@ public class ClassSplitterTest {
 		Assert.assertEquals(1, splitter.getMethodCount());
 		Assert.assertEquals(1, splitter.getAttributeCount());
 		
-		MethodInfo methodInfo = splitter.getMethodInfoFor("method");
+		MethodInfo methodInfo = splitter.getMethodInfoFor("foo");
 		Assert.assertNotNull(methodInfo);
 		List<AttributeInfo> attributes = methodInfo.getUsedAttributes();
 		Assert.assertEquals(1, attributes.size());
-		Assert.assertEquals("attr", attributes.get(0).toString());
+		Assert.assertEquals("attr", attributes.get(0).getName());
 	}
 	
 	

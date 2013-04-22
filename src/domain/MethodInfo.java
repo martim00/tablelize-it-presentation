@@ -38,12 +38,16 @@ public class MethodInfo {
 				
 				String statementAsString = statement.toString();
 				// TODO: tratar parametros com mesmo nome de um atributo...
-				if (statementAsString.contains(attr.toString())) {
+				if (statementAsString.contains(attr.getName())) {
 					this.usedAttributes.add(attr);
 				}
 			}
 		}
 
 
+	}
+
+	public boolean useAttributes() {
+		return !this.usedAttributes.isEmpty();
 	}
 }

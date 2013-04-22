@@ -8,11 +8,8 @@ public class AttributeInfo {
 		this.attributeName = attributeName;
 	}
 	
-	@Override
-	public String toString() {
+	public String getName() {
 		return this.attributeName;
 	}
-	
-	
 
 }
