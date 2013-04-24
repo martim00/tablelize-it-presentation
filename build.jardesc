@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="tablelize-it-sample/build/tablelize-it-sample.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/tablelize-it-sample/build.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <folder path="/tablelize-it-sample/lib"/>
+        <javaElement handleIdentifier="=tablelize-it-sample/src"/>
+        <file path="/tablelize-it-sample/.classpath"/>
+        <file path="/tablelize-it-sample/.gitignore"/>
+        <file path="/tablelize-it-sample/README.md"/>
+        <folder path="/tablelize-it-sample/resource"/>
+        <file path="/tablelize-it-sample/.project"/>
+    </selectedElements>
+</jardesc>
