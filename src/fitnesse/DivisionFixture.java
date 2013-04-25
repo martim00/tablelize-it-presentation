@@ -1,6 +1,8 @@
 package fitnesse;
 
-public class Division {
+import fit.ColumnFixture;
+
+public class DivisionFixture extends ColumnFixture {
     private double numerator, denominator;
 
     public void setNumerator(double numerator) {

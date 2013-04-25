@@ -10,7 +10,7 @@
             <packagesToUnSeal/>
         </sealing>
     </manifest>
-    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
         <folder path="/tablelize-it-sample/lib"/>
         <javaElement handleIdentifier="=tablelize-it-sample/src"/>
         <file path="/tablelize-it-sample/.classpath"/>
