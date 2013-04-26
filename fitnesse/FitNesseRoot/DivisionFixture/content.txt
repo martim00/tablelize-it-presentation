@@ -1,0 +1,10 @@
+!contents -R2 -g -p -f -h
+
+!path C:\Users\Aniceto\workspace\tablelize-it-sample\build\tablelize-it-sample.jar
+!path C:\Users\Aniceto\workspace\tablelize-it-sample\fitnesse\fitnesse-standalone.jar
+
+|fitnesse.DivisionFixture|
+|numerator|denominator|quotient?|
+|10|5|2|
+|1|2|0.5|
+|4|2|0|

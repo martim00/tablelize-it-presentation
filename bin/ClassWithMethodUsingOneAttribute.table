@@ -1,0 +1,15 @@
+|split|
+|class|
+|ClassWithMethodUsingOneAttribute.java|
+
+|should have methods|
+|name|
+|foo|
+
+|should have attributes|
+|name|
+|attr|
+
+|method|foo|
+|use|
+|attr|

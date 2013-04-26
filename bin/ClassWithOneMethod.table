@@ -1,0 +1,11 @@
+|split|
+|class|
+|ClassWithOneMethod.java|
+
+|should have methods|
+|name|
+|method|
+
+|method|method|
+|use|
+|-|

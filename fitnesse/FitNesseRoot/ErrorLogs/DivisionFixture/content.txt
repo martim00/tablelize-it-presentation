@@ -1,0 +1,7 @@
+!3 !-fit-!
+|'''Date: '''| 12:50:13 PM (BRT) on Quinta-feira, Abril 25, 2013 |
+|'''Test Page: '''|.DivisionFixture|
+|'''Command: '''| !-java -cp fitnesse.jar;C:\Users\Aniceto\workspace\tablelize-it-sample\build\tablelize-it-sample.jar;C:\Users\Aniceto\workspace\tablelize-it-sample\fitnesse\fitnesse-standalone.jar fit.FitServer Aniceto-PC 80 9-! |
+|'''Exit code: '''| 1 |
+|'''Time elapsed: '''| 0.379 seconds |
+

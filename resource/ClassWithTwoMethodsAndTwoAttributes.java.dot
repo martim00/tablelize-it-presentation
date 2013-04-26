@@ -1,0 +1,9 @@
+digraph class {
+attr1;
+attr2;
+foo[shape=box];
+foo->attr1;
+foo->attr2;
+roo[shape=box];
+roo->attr1;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20121220</FitNesseVersion>
+  <rootPath>ClassWithMethodUsingOneAttribute</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8</runTimeInMillis>
+    <content><![CDATA[<div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><br/><table>
+	<tr>
+		<td colspan="2">fitnesse.SplitClassFixture</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>ok?</td>
+	</tr>
+	<tr>
+		<td>C:\Users\Aniceto\workspace\tablelize-it-sample\resource\ClassWithMethodUsingOneAttribute.java</td>
+		<td class="pass">true</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td>should have methods</td>
+	</tr>
+	<tr>
+		<td>name</td>
+	</tr>
+	<tr>
+		<td class="pass">foo</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td>should have attributes</td>
+	</tr>
+	<tr>
+		<td>name</td>
+	</tr>
+	<tr>
+		<td class="pass">attr</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td>fitnesse.MethodFixture</td>
+		<td>foo</td>
+	</tr>
+	<tr>
+		<td colspan="2">use</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="pass">attr</td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>ClassWithMethodUsingOneAttribute</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

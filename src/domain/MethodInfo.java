@@ -1,6 +1,7 @@
 package domain;
 
 import japa.parser.ast.body.MethodDeclaration;
+import japa.parser.ast.body.Parameter;
 import japa.parser.ast.stmt.Statement;
 
 import java.util.ArrayList;
@@ -25,6 +26,20 @@ public class MethodInfo {
 		return usedAttributes;
 	}
 	
+	private boolean containsParameterWithName(String name) {
+		List<Parameter> parameters = declaration.getParameters();
+		for (Parameter parameter : parameters) {
+			if (parameter.getId().getName() == name) 
+				return true;
+		}
+		return false;
+	}
+	
+	private String getExpressionToFind(String attrName) {
+		return this.containsParameterWithName(attrName) 
+				? "this." + attrName : attrName;
+	}
+	
 	public void extractAttributesInUse(List<AttributeInfo> attributes) {
 
 		List<Statement> statements = declaration.getBody().getStmts();
@@ -38,6 +53,8 @@ public class MethodInfo {
 				
 				String statementAsString = statement.toString();
 				// TODO: tratar parametros com mesmo nome de um atributo...
+				//String expressionToFind = this.getExpressionToFind(attr.getName());  
+				
 				if (statementAsString.contains(attr.getName())) {
 					this.usedAttributes.add(attr);
 				}

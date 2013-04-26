@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20121220</FitNesseVersion>
+  <rootPath>DivisionFixture</rootPath>
+    <result>
+    <counts>
+      <right>2</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4</runTimeInMillis>
+    <content><![CDATA[<div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><br/><span class="meta">classpath: C:\Users\Aniceto\workspace\tablelize-it-sample\build\tablelize-it-sample.jar</span><br/><span class="meta">classpath: C:\Users\Aniceto\workspace\tablelize-it-sample\fitnesse\fitnesse-standalone.jar</span><br/><br/><table>
+	<tr>
+		<td colspan="3">fitnesse.DivisionFixture</td>
+	</tr>
+	<tr>
+		<td>numerator</td>
+		<td>denominator</td>
+		<td>quotient?</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>5</td>
+		<td class="pass">2</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td class="pass">0.5</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>2</td>
+		<td class="fail">0 <span class="fit_label">expected</span><hr>2.0 <span class="fit_label">actual</span></td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>DivisionFixture</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

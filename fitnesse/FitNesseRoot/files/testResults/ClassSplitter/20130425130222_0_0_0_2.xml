@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20121220</FitNesseVersion>
+  <rootPath>ClassSplitter</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>4</runTimeInMillis>
+    <content><![CDATA[<span class="meta">classpath: C:\Users\Aniceto\workspace\tablelize-it-sample\build\tablelize-it-sample.jar</span><br/><span class="meta">classpath: C:\Users\Aniceto\workspace\tablelize-it-sample\fitnesse\fitnesse-standalone.jar</span><br/><br/><table>
+	<tr>
+		<td colspan="2">fitnesse.SplitClassFixture</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>ok?</td>
+	</tr>
+	<tr>
+		<td>ClassWithOneAttribute.java</td>
+		<td class="error">true<hr><pre><div class="fit_stacktrace">java.lang.NoClassDefFoundError: japa/parser/ParseException
+	at fitnesse.SplitClassFixture.ok(SplitClassFixture.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fit.TypeAdapter.invoke(TypeAdapter.java:109)
+	at fit.TypeAdapter.get(TypeAdapter.java:97)
+	at fit.Fixture$CellComparator.compareCellToResult(Fixture.java:372)
+	at fit.Fixture$CellComparator.access$100(Fixture.java:358)
+	at fit.Fixture.compareCellToResult(Fixture.java:300)
+	at fit.Fixture.check(Fixture.java:296)
+	at fit.ColumnFixture.check(ColumnFixture.java:51)
+	at fit.Binding$QueryBinding.doCell(Binding.java:215)
+	at fit.ColumnFixture.doCell(ColumnFixture.java:37)
+	at fit.Fixture.doCells(Fixture.java:172)
+	at fit.Fixture.doRow(Fixture.java:166)
+	at fit.ColumnFixture.doRow(ColumnFixture.java:25)
+	at fit.Fixture.doRows(Fixture.java:160)
+	at fit.ColumnFixture.doRows(ColumnFixture.java:18)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretTables(Fixture.java:100)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+Caused by: java.lang.ClassNotFoundException: japa.parser.ParseException
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 25 more
+</div></pre></td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td>should have attributes</td>
+	</tr>
+	<tr>
+		<td class="error">name<hr><pre><div class="fit_stacktrace">java.lang.NullPointerException
+	at fitnesse.ShouldHaveAttributesFixture.query(ShouldHaveAttributesFixture.java:30)
+	at fit.RowFixture.doRows(RowFixture.java:29)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+</div></pre></td>
+	</tr>
+	<tr>
+		<td>attr1</td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>ClassSplitter</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

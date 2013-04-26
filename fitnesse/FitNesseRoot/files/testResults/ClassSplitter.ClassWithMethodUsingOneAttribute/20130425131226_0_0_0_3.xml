@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20121220</FitNesseVersion>
+  <rootPath>ClassWithMethodUsingOneAttribute</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>3</runTimeInMillis>
+    <content><![CDATA[<div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><br/>!|fitnesse.SplitClassFixture|<br/>|name|ok?<br/><table>
+	<tr>
+		<td class="error"><a href="ClassSplitter.ClassWithMethodUsingOneAttribute">ClassWithMethodUsingOneAttribute</a>.java<hr/> <span class="fit_label">Could not find fixture: ClassWithMethodUsingOneAttribute.java.</span></td>
+		<td>true</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td class="error">should have methods<hr/> <span class="fit_label">Could not find fixture: ShouldHaveMethods.</span></td>
+	</tr>
+	<tr>
+		<td>name</td>
+	</tr>
+	<tr>
+		<td>foo</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td class="error">should have attributes<hr/> <span class="fit_label">Could not find fixture: ShouldHaveAttributes.</span></td>
+	</tr>
+	<tr>
+		<td>name</td>
+	</tr>
+	<tr>
+		<td>attr</td>
+	</tr>
+</table>
+<br/>|method|foo|<br/>|use|<br/>|attr]]></content>
+    <relativePageName>ClassWithMethodUsingOneAttribute</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

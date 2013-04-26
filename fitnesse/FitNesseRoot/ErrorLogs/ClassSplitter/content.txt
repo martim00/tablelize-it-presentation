@@ -1,0 +1,7 @@
+!3 !-fit-!
+|'''Date: '''| 5:10:31 PM (BRT) on Sexta-feira, Abril 26, 2013 |
+|'''Test Page: '''|.ClassSplitter|
+|'''Command: '''| !-java -cp fitnesse.jar;C:\Users\Aniceto\workspace\tablelize-it-sample\lib\javaparser-1.0.8.jar;C:\Users\Aniceto\workspace\tablelize-it-sample\build\tablelize-it-sample.jar;C:\Users\Aniceto\workspace\tablelize-it-sample\fitnesse\fitnesse-standalone.jar fit.FitServer Aniceto-PC 80 4-! |
+|'''Exit code: '''| 3 |
+|'''Time elapsed: '''| 0.538 seconds |
+

@@ -1,0 +1,7 @@
+|split|
+|class|
+|ClassWithOneAttribute.java|
+
+|should have attributes|
+|name|
+|attr1|

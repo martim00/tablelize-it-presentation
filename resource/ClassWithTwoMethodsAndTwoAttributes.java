@@ -2,7 +2,7 @@
 public class ClassWithTwoMethodsAndTwoAttributes
 {
 	private int attr1 = 0;
-	private String attr2 = 0;
+	private String attr2 = "";
 	
 	public void foo() {
 		attr1 = 1;

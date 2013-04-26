@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20121220</FitNesseVersion>
+  <rootPath>ClassWithMethodUsingOneAttribute</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>16</runTimeInMillis>
+    <content><![CDATA[<div class="toc1">
+	<div class="contents">
+		<b>Contents:</b>
+		<ul/>
+	</div>
+</div>
+<br/><br/><table>
+	<tr>
+		<td>fitnesse.SplitClassFixture</td>
+	</tr>
+	<tr>
+		<td>name</td>
+	</tr>
+	<tr>
+		<td>ClassWithMethodUsingOneAttribute.java</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td>should have methods</td>
+	</tr>
+	<tr>
+		<td class="error">name<hr><pre><div class="fit_stacktrace">java.lang.NullPointerException
+	at fitnesse.ShouldHaveMethodsFixture.query(ShouldHaveMethodsFixture.java:29)
+	at fit.RowFixture.doRows(RowFixture.java:29)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+</div></pre></td>
+	</tr>
+	<tr>
+		<td>foo</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td>should have attributes</td>
+	</tr>
+	<tr>
+		<td class="error">name<hr><pre><div class="fit_stacktrace">java.lang.NullPointerException
+	at fitnesse.ShouldHaveAttributesFixture.query(ShouldHaveAttributesFixture.java:30)
+	at fit.RowFixture.doRows(RowFixture.java:29)
+	at fit.Fixture.doTable(Fixture.java:154)
+	at fit.Fixture.interpretFollowingTables(Fixture.java:120)
+	at fit.Fixture.interpretTables(Fixture.java:106)
+	at fit.Fixture.doTables(Fixture.java:80)
+	at fit.FitServer.process(FitServer.java:81)
+	at fit.FitServer.run(FitServer.java:56)
+	at fit.FitServer.main(FitServer.java:41)
+</div></pre></td>
+	</tr>
+	<tr>
+		<td>attr</td>
+	</tr>
+</table>
+<br/>|method|foo|<br/>|use|<br/>|attr]]></content>
+    <relativePageName>ClassWithMethodUsingOneAttribute</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

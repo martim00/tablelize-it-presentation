@@ -1,0 +1,17 @@
+!contents -R2 -g -p -f -h
+
+!|fitnesse.SplitClassFixture|
+|name|ok?|
+|C:\Users\Aniceto\workspace\tablelize-it-sample\resource\ClassWithMethodUsingOneAttribute.java|true|
+
+|should have methods|
+|name|
+|foo|
+
+|should have attributes|
+|name|
+|attr|
+
+|fitnesse.MethodFixture|foo|
+|use|
+|attr|

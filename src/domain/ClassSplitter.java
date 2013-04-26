@@ -136,6 +136,13 @@ public class ClassSplitter {
 			String var = variable.getId().getName();
 			
 			this.splitter.attributes.add(new AttributeInfo(var));
+			
+//			List<VariableDeclarator> variables = n.getVariables();
+//			for (VariableDeclarator var : variables) {
+//				this.splitter.attributes.add(new AttributeInfo(var.getId().getName()));	
+//			}
+			
+			
         }	
 	}
 	

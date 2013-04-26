@@ -1,0 +1,17 @@
+!|fitnesse.SplitClassFixture|
+|name|ok?|
+|C:\Users\Aniceto\workspace\tablelize-it-sample\resource\ClassWithTwoAttributesDefinitionInTheSameLine.java|true|
+
+|should have methods|
+|name|
+|foo|
+
+|should have attributes|
+|name|
+|attr1|
+|attr2|
+
+|fitnesse.MethodFixture|foo|
+|use|
+|attr2|
+

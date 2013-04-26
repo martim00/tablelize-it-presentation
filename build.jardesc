@@ -16,7 +16,7 @@
         <file path="/tablelize-it-sample/.classpath"/>
         <file path="/tablelize-it-sample/.gitignore"/>
         <file path="/tablelize-it-sample/README.md"/>
-        <folder path="/tablelize-it-sample/resource"/>
+        <javaElement handleIdentifier="=tablelize-it-sample/resource"/>
         <file path="/tablelize-it-sample/.project"/>
     </selectedElements>
 </jardesc>

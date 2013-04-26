@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20121220</FitNesseVersion>
+  <rootPath>ClassSplitter</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>2</runTimeInMillis>
+    <content><![CDATA[<span class="meta">classpath: C:\Users\Aniceto\workspace\tablelize-it-sample\build\tablelize-it-sample.jar</span><br/><span class="meta">classpath: C:\Users\Aniceto\workspace\tablelize-it-sample\fitnesse\fitnesse-standalone.jar</span><br/><br/><table>
+	<tr>
+		<td class="error">split class<hr/> <span class="fit_label">Could not find fixture: SplitClass.</span></td>
+	</tr>
+	<tr>
+		<td>class</td>
+	</tr>
+	<tr>
+		<td>ClassWithOneAttribute.java</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td class="error">should have attributes<hr/> <span class="fit_label">Could not find fixture: ShouldHaveAttributes.</span></td>
+	</tr>
+	<tr>
+		<td>name</td>
+	</tr>
+	<tr>
+		<td>attr1</td>
+	</tr>
+</table>
+]]></content>
+    <relativePageName>ClassSplitter</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

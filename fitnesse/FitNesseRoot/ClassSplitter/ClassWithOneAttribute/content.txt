@@ -1,0 +1,8 @@
+!|fitnesse.SplitClassFixture|
+|name|ok?|
+|C:\Users\Aniceto\workspace\tablelize-it-sample\resource\ClassWithOneAttribute.java|true|
+
+|should have attributes|
+|name|
+|attr1|
+

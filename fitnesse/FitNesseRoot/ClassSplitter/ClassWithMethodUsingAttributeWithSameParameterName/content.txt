@@ -1,0 +1,17 @@
+!|fitnesse.SplitClassFixture|
+|name|ok?|
+|C:\Users\Aniceto\workspace\tablelize-it-sample\resource\ClassWithMethodUsingParameterWithSameAttributeName.java|true|
+
+|should have methods|
+|name|
+|foo|
+
+|should have attributes|
+|name|
+|attr|
+
+|fitnesse.MethodFixture|foo|
+|use|
+
+
+
